@@ -1,0 +1,21 @@
+title: "Dr. Ibnu Jihad"
+description: "Computational Physics Research and Course Materials"
+url: "https://ibnujihadugm.github.io"
+
+# Configure the Remote Theme
+remote_theme: "mmistakes/minimal-mistakes"
+plugins:
+  - jekyll-include-cache
+
+# Enable MathJax for LaTeX equations
+markdown: kramdown
+mathjax: true
+
+# Set the default page layout
+defaults:
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+      author_profile: true
