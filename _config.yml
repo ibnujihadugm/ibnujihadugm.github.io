@@ -1,5 +1,5 @@
-title: "Dr. Ibnu Jihad"
-description: "Computational Physics Research and Course Materials"
+title: "Ibnu Jihad - Persoal Site"
+description: "Research, Course Materials, and more..."
 url: "https://ibnujihadugm.github.io"
 
 # Configure the Remote Theme
@@ -19,3 +19,19 @@ defaults:
     values:
       layout: single
       author_profile: true
+
+#Author Details      
+author:
+  name: "Ibnu Jihad, Ph.D."
+  bio: "Lecturer and Computational Physics Researcher at Universitas Gadjah Mada."
+  location: "Yogyakarta, Indonesia"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/ibnujihadugm"
+    - label: "Google Scholar"
+      icon: "fas fa-fw fa-graduation-cap"
+      url: "YOUR_SCHOLAR_URL_HERE"
+
+#Avatar
+avatar: "/images/profile.JPG"
