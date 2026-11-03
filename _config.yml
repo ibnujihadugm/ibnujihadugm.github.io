@@ -23,6 +23,7 @@ defaults:
 #Author Details      
 author:
   name: "Ibnu Jihad, Ph.D."
+  avatar: "/images/profile.JPG"
   bio: "Lecturer and Computational Physics Researcher at Universitas Gadjah Mada."
   location: "Yogyakarta, Indonesia"
   links:
@@ -33,5 +34,5 @@ author:
       icon: "fas fa-fw fa-graduation-cap"
       url: "https://scholar.google.com/citations?user=CnblH-wAAAAJ&hl=en"
 
-#Avatar
-avatar: "/images/profile.JPG"
+
+
