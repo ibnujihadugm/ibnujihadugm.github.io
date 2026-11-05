@@ -1,0 +1,12 @@
+---
+---
+
+@import "minimal-mistakes";
+
+/* Target all single post layouts and narrow their article contents */
+.layout--single .page__inner-wrap {
+  max-width: 950px;
+  margin: 0 auto;
+  padding-left: clamp(1rem, 5vw, 2.5rem);
+  padding-right: clamp(1rem, 5vw, 2.5rem);
+}

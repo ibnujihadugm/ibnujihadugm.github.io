@@ -1,0 +1,467 @@
+
+
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.28.1 by Michael Rose
+  Copyright 2013-2026 Michael Rose - mademistakes.com | @mmistakes
+  Copyright 2024-2026 iBug - ibugone.com | @iBug
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+
+<html lang="en" class="no-js" dir="ltr">
+  <head>
+    
+<meta charset="utf-8">
+
+
+<!-- begin _includes/seo.html --><title>PBE Band Gap Corrections using Machine Learning with Reduced Features - Ibnu Jihad - Personal Site</title>
+<meta name="description" content="">
+
+
+  <meta name="author" content="Ibnu Jihad, Ph.D.">
+  
+  <meta property="article:author" content="Ibnu Jihad, Ph.D.">
+  
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="Ibnu Jihad - Personal Site">
+<meta property="og:title" content="PBE Band Gap Corrections using Machine Learning with Reduced Features">
+<meta property="og:url" content="http://localhost:4000/2026/11/04/band-gap-research.html">
+
+
+  <meta property="og:description" content="">
+
+
+
+  <meta property="og:image" content="http://localhost:4000/images/PBE-correction.jpeg">
+  
+
+
+
+
+
+
+
+  <meta property="article:published_time" content="2026-11-04T00:00:00+07:00">
+
+
+
+
+
+
+<link rel="canonical" href="http://localhost:4000/2026/11/04/band-gap-research.html">
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+
+  <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Ibnu Jihad - Personal Site Feed">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+  
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css"></noscript>
+
+
+
+    <!-- start custom head snippets -->
+
+
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']],
+        processEscapes: true
+      }
+    };
+  </script>
+  <script async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single">
+    
+<nav class="skip-links" aria-label="Skip links">
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    
+
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav" aria-label="Primary navigation">
+        
+        <a class="site-title" href="/">
+          Ibnu Jihad - Personal Site
+          
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a
+                href="/"
+                
+                
+              >Home</a>
+            </li><li class="masthead__menu-item">
+              <a
+                href="/publications/"
+                
+                
+              >Publications</a>
+            </li><li class="masthead__menu-item">
+              <a
+                href="/courses/"
+                
+                
+              >Courses</a>
+            </li></ul>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+  
+
+
+
+
+
+
+
+
+<div class="page__hero"
+  style=" background-image: url('');"
+>
+  
+    <img src="/images/PBE-correction.jpeg" alt="PBE Band Gap Corrections using Machine Learning with Reduced Features" class="page__hero-image">
+  
+  
+</div>
+
+
+
+
+
+
+
+<div id="main" role="main">
+  
+
+  <div class="sidebar sticky">
+  
+
+
+
+<div itemscope itemtype="https://schema.org/Person" class="h-card">
+
+  
+    <div class="author__avatar">
+      <a href="http://localhost:4000/">
+        <img src="/images/profile.JPG" alt="Ibnu Jihad, Ph.D." itemprop="image" class="u-photo">
+      </a>
+    </div>
+  
+
+  <div class="author__content">
+    <h3 class="author__name p-name" itemprop="name">
+      <a class="u-url" rel="me" href="http://localhost:4000/" itemprop="url">Ibnu Jihad, Ph.D.</a>
+    </h3>
+    
+      <div class="author__bio p-note" itemprop="description">
+        <p>Lecturer and Computational Physics Researcher at Universitas Gadjah Mada.</p>
+
+      </div>
+    
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">Follow</button>
+    <ul class="author__urls social-icons">
+      
+        <li itemprop="homeLocation" itemscope itemtype="https://schema.org/Place">
+          <i class="fas fa-fw fa-location-dot" aria-hidden="true"></i> <span itemprop="name" class="p-locality">Yogyakarta, Indonesia</span>
+        </li>
+      
+
+      
+        
+          
+            <li><a href="https://github.com/ibnujihadugm" rel="nofollow noopener noreferrer me" itemprop="sameAs"><i class="fab fa-fw fa-github" aria-hidden="true"></i><span class="label">GitHub</span></a></li>
+          
+        
+          
+            <li><a href="https://scholar.google.com/citations?user=CnblH-wAAAAJ&hl=en" rel="nofollow noopener noreferrer me" itemprop="sameAs"><i class="fas fa-fw fa-graduation-cap" aria-hidden="true"></i><span class="label">Google Scholar</span></a></li>
+          
+        
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      <!--
+  <li>
+    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs" rel="nofollow noopener noreferrer me">
+      <i class="fas fa-fw" aria-hidden="true"></i> Custom Social Profile Link
+    </a>
+  </li>
+-->
+    </ul>
+  </div>
+</div>
+
+  
+  
+  </div>
+
+
+
+  <article class="page h-entry" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="PBE Band Gap Corrections using Machine Learning with Reduced Features">
+    <meta itemprop="description" content="">
+    <meta itemprop="datePublished" content="2026-11-04T00:00:00+07:00">
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title p-name" itemprop="headline">
+            <a href="http://localhost:4000/2026/11/04/band-gap-research.html" itemprop="url">PBE Band Gap Corrections using Machine Learning with Reduced Features
+</a>
+          </h1>
+          
+
+
+
+        </header>
+      
+
+      <section class="page__content e-content" itemprop="text">
+        
+        <p><img src="/images/PBE-correction.jpeg" alt="Band Gap Correction Illustration" /></p>
+
+<h3 id="overview-of-the-research">Overview of the Research</h3>
+<p>In our paper published in <em>Computational Materials Science</em>, we developed a physics-guided machine learning framework to address one of the most persistent bottlenecks in computational materials discovery: the systematic band gap underestimation inherent in Density Functional Theory using the Perdew–Burke–Ernzerhof functional (DFT-PBE) <a href="#ref-1"></a>.</p>
+
+<p>While high-throughput screening relies on DFT-PBE for its computational speed and structural reliability, accurate electronic property predictions typically demand many-body perturbation theory (\(G_0W_0\)). However, the extreme computational cost of \(G_0W_0\) makes screening large crystal repositories practically infeasible. Our goal was to bridge this gap by boosting standard PBE calculations to near-\(G_0W_0\) precision using a minimal, physically grounded feature set <a href="#ref-1"></a>.</p>
+
+<hr />
+
+<h3 id="the-problem-why-a-reduced-feature-set">The Problem: Why a Reduced Feature Set?</h3>
+<p>Many machine learning models designed to predict or correct band gaps rely on extensive descriptor collections (often 16 to over 40 features) or are restricted to narrow chemical spaces (such as 2D monolayers or oxide perovskites). These approaches suffer from two main drawbacks:</p>
+
+<ol>
+  <li><strong>Loss of physical interpretability</strong>: Large feature spaces often obscure the fundamental mechanisms driving the correction.</li>
+  <li><strong>Computational overhead</strong>: Many complex descriptors require additional, demanding electronic calculations.</li>
+</ol>
+
+<p>To solve this, we focused on identifying a compact set of descriptors directly linked to Coulombic interactions within crystal lattices, avoiding redundant or computationally expensive features <a href="#ref-1"></a>.</p>
+
+<hr />
+
+<h3 id="the-five-physics-guided-descriptors">The Five Physics-Guided Descriptors</h3>
+<p>Through feature correlation and ranking, we condensed the feature space down to just <strong>five parameters</strong> that can be obtained directly from standard PBE output or elementary periodic table data without any extra atomistic calculations <a href="#ref-1"></a>:</p>
+
+<ol>
+  <li><strong>PBE Band Gap (\(E_{g,\text{PBE}}\) )</strong>: The baseline value to be corrected.</li>
+  <li><strong>Average Inverse Atomic Distance (\(1/r\) )</strong>: Calculated from the unit-cell volume divided by the number of atoms, representing characteristic electrostatic interaction strength.</li>
+  <li><strong>Average Oxidation State (OS)</strong>: The mean magnitude of atomic formal oxidation states, capturing ionic charge magnitude.</li>
+  <li><strong>Average Electronegativity (\(E_n\) )</strong>: Gauging atomic electron attraction across the crystal.</li>
+  <li><strong>Minimum Electronegativity Difference (\(\Delta E_n\) )</strong>: Capturing the charge transfer and polarity between oppositely charged constituents.</li>
+</ol>
+
+<hr />
+
+<h3 id="key-findings-and-performance">Key Findings and Performance</h3>
+<p>We evaluated 16 regression algorithms across a benchmark dataset of <strong>265 inorganic semiconductors and insulators</strong> (including ternary, equiatomic binary, and non-equiatomic binary crystals) covering band gaps from 0.75 eV up to 14.55 eV <a href="#ref-1"></a>:</p>
+
+<ul>
+  <li><strong>High Accuracy with Gaussian Process Regression</strong>: Our top model—Gaussian Process Regression (GPR) with a Matérn 3/2 kernel—achieved a cross-validation Root-Mean-Square Error (<strong>RMSE</strong>) of <strong>0.252 eV</strong> and an <strong>\(R^2\) of 0.9932</strong> <a href="#ref-1"></a>.</li>
+  <li><strong>Strong Linear Baselines</strong>: Even a standard multilinear regression model yielded an RMSE of <strong>0.330 eV</strong>, confirming that the selected five descriptors inherently capture the underlying physical relationships rather than relying on nonlinear mathematical artifacts <a href="#ref-1"></a>.</li>
+  <li><strong>Unbiased Residuals</strong>: The prediction errors follow a normal distribution centered at zero mean:</li>
+</ul>
+
+\[\mu = 0\text{ eV}, \quad \sigma = 0.245\text{ eV}\]
+
+<p>demonstrating negligible systematic error <a href="#ref-1"></a>.</p>
+<ul>
+  <li><strong>External Database Validation</strong>: Testing against independent structures from the AFLOW repository matched with NREL MatDB \(G_0W_0\) values demonstrated that the model generalized well, cutting raw PBE errors from 1.89 eV down to 1.03 eV out-of-the-box (and 0.68 eV upon retraining) <a href="#ref-1"></a>.</li>
+</ul>
+
+<hr />
+
+<h3 id="practical-impact">Practical Impact</h3>
+<p>By pairing standard PBE calculations with this 5-descriptor ML model, researchers can achieve near-quasiparticle (\(G_0W_0\)) accuracy at the speed and throughput of standard DFT. This provides a practical, low-cost framework for large-scale materials screening and rapid exploration of compositional trends across diverse crystal systems.</p>
+
+<p>For full technical details, training parameters, and cross-validation benchmarks, check out our published paper <a href="#ref-1"></a>.</p>
+
+<hr />
+
+<h3 id="references">References</h3>
+
+<p><a id="ref-1"></a> Ibnu Jihad, Miftah Hadi S. Anfa, Saad M. Alqahtani, and Fahhad H. Alharbi, <em>“DFT-PBE band gap correction using machine learning with a reduced set of features,”</em> <strong>Computational Materials Science</strong>, vol. 244, p. 113153, 2024. <a href="https://doi.org/10.1016/j.commatsci.2024.113153">https://doi.org/10.1016/j.commatsci.2024.113153</a></p>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+  
+
+  
+
+
+        
+
+
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time class="dt-published" datetime="2026-11-04T00:00:00+07:00">November 4, 2026</time></p>
+
+
+      </footer>
+
+      
+
+      
+
+
+    </div>
+
+    
+  </article>
+
+  
+  
+</div>
+
+      
+    </div>
+
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        
+
+
+<div class="page__footer-follow">
+  <ul class="social-icons">
+    
+
+    
+
+    
+      <li><a href="/feed.xml"><i class="fas fa-fw fa-square-rss" aria-hidden="true"></i> Feed</a></li>
+    
+  </ul>
+</div>
+
+
+<div class="page__footer-copyright">&copy; 2026 <a href="http://localhost:4000">Ibnu Jihad - Personal Site</a>. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/jekyll-themes/minimal-mistakes/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+
+  <script src="/assets/js/main.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+  </body>
+</html>

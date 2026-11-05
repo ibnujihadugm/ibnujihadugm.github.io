@@ -1,4 +1,4 @@
-title: "Ibnu Jihad - Persoal Site"
+title: "Ibnu Jihad - Personal Site"
 description: "Research, Course Materials, and more..."
 url: "https://ibnujihadugm.github.io"
 
@@ -9,7 +9,6 @@ plugins:
 
 # Enable MathJax for LaTeX equations
 markdown: kramdown
-mathjax: true
 
 # Set the default page layout
 defaults:
@@ -19,6 +18,18 @@ defaults:
     values:
       layout: single
       author_profile: true
+      mathjax: true
+      header:
+        teaser: "/images/band-gap-header-light.jpg"
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      mathjax: true
+      header:
+        teaser: "/images/band-gap-header-light.jpg"
 
 #Author Details      
 author:
@@ -33,6 +44,3 @@ author:
     - label: "Google Scholar"
       icon: "fas fa-fw fa-graduation-cap"
       url: "https://scholar.google.com/citations?user=CnblH-wAAAAJ&hl=en"
-
-
-
